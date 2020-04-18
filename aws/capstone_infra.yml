@@ -33,7 +33,7 @@ Resources:
             sudo usermod -aG docker ubuntu
             docker pull omaroovee/capstone
             docker run -d -p 80:80 omaroovee/capstone
-        ImageId: ami-06358f49b5839867c
+        ImageId: ami-003634241a8fcdec0
         SecurityGroups:
         - Ref: WebServerSecGroup
         InstanceType: t3.micro
