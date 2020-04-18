@@ -15,7 +15,7 @@ node {
     }
     stage('Build docker image') {
        
-            app = docker.build("omaroovee/inmemorydb")
+            app = docker.build("omaroovee/capstone")
     }
     stage('Push to dockerhub') {
             docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
@@ -27,7 +27,7 @@ node {
 
     stage('Deploying to EKS') {
         echo 'Deploying to AWS...'
-        sh './scripts/create_infra.sh'
+        sh './aws/create_infra.sh'
     }
 
     stage("Cleaning up") {
