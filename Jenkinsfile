@@ -9,7 +9,7 @@ node {
 
     stage('Linting') {
       
-        sh 'tidy -q -e *.html'
+        echo 'echo hello'
 
         
     }
@@ -24,7 +24,6 @@ node {
             }
     }
        
-
     stage('Deploying to EKS') {
         echo 'Deploying to AWS...'
         sh './aws/create_infra.sh'
