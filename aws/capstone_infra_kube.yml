@@ -59,7 +59,7 @@ Resources:
             git clone https://github.com/Omaroovee/udacity-devops-capstone-project.git
             cd udacity-devops-capstone-project/aws
             ./run_kubernetes.sh
-        ImageId: ami-003b90277095b7a42
+        ImageId: ami-003634241a8fcdec0
         SecurityGroups:
         - Ref: WebServerSecGroup
         InstanceType: t3.medium

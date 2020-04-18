@@ -26,7 +26,7 @@ node {
        
     stage('Deploying to EKS') {
         echo 'Deploying to AWS...'
-        sh './aws/create_infra.sh'
+        sh 'create_infra.sh'
     }
 
     stage("Cleaning up") {
